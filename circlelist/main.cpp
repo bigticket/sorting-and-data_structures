@@ -7,10 +7,15 @@ using namespace std;
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 $                                                                      $
 $ basic functions:                                                     $
-$ addFront(e) - insert element e at the front of the list              $
-$ removeFront() - remove the element from front of the list            $
-$ front() - return a reference to the element in the front of the list $
-$ empty() - return true if the list 11 is empty and false otherwise    $
+$ add(e) - insert a new node with element e immediately after the      $
+$  cursor; if the list is empty, then node becomes the cursor and its  $
+$  next pointer points to itself                                       $
+$ remove() - remove the node immediately after the cursor(not the      $
+$   cursor itself, unless it is the only node); if the list becomes    $
+$   empty, the cursor is set to null                                   $
+$ front() - return the element referenced by the cursor                $
+$ back() - return the element immediately after the cursor             $
+$ advance() - advance the cursor to the next node in the list          $
 $                                                                      $
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 */
